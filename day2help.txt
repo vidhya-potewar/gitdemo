@@ -1,0 +1,137 @@
+ng new ------- create application
+
+
+index.html ------- SPA ---single page application
+
+
+index.html file will get build by various components
+
+
+<html>
+<body>
+<div>
+<ul>
+<li>aaa</li>
+<li>aaa</li>
+<li>aaaa</li>
+<ul>
+</div>
+<div>
+<table>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+</table>
+</div>
+<div>
+<form>
+<input>
+<input>
+<button>
+</form>
+</div>
+</body>
+</html>
+
+
+PformComponent
+pform.component.html
+pform.component.css
+pform.component.ts
+<div>
+<form>
+<input>
+<input>
+<button>
+</form>
+</div>
+
+PtabComponent
+ptab.component.html
+ptab.component.css
+ptab.component.ts
+<div>
+<table>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+</table>
+</div>
+
+PlistComponent
+plist.component.html -----View   Product,Person-----Model
+plist.component.css
+plist.component.ts----Controller
+   selector:plist
+<div>
+<ul>
+<li>aaa</li>
+<li>aaa</li>
+<li>aaaa</li>
+<ul>
+</div>
+
+AppComponent
+app.component.html
+app.component.css
+app.component.ts
+<app-root>
+	<plist>
+	<ptab>
+	<pform>
+</app-root>
+
+app.module.ts
+declarations----list of userdefined Components----- PlistComponent,PtabComponent,PformComponent
+imports -----list of builin components
+provider ----list of classes that provides data ----Services
+bootstrap----- this is start point of application
+
+
+index.html
+<html>
+<body>
+<app-root></app-root>
+</body>
+</html>
+
+
+MVC architecture with Single page application------speed increases
+modular application ------maintainance is easy
+division of work can be done in the team ---- faster generation of application
+
+angular
+
+data binding
+1. class to view------{{}} ---angular expression
+                      []------ property binding
+2. view to class ----- () ----- event handling
+3. both sided  -------[()] ------ two way binding forms
+
+
+angular directives
+attribute directives
+ngModel ----- used with forms
+ngClass
+ngStyle
+ngSwitch
+structural directive
+*ngIf----- structural directive
+*ngFor---- structural directive
+
+create a component
+1. create 3 files in your folder
+pform.component.ts
+pform.component.html
+pform.component.css
+
+2. make entry in app.module.ts
+in declarations array
+and import the component
+
+3. add it as a child as per your requirement
+
+
+
